@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <!-- dropdown.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>タイトル</title>
+  <style>
+  </style>
+</head>
+<body class="drawer drawer--left">
+    <header role="banner">
+      <!-- ハンバーガーボタン -->
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <!-- ナビゲーションの中身 -->
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+    <!-- ドロップダウンの中身 -->
+    <li class="drawer-dropdown"><a class="drawer-menu-item" href="#" data-toggle="dropdown">Nav2 <span class="drawer-caret"></span></a>
+      <ul class="drawer-dropdown-menu">
+        <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav1</a></li>
+        <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav2</a></li>
+        <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header>
+    <main role="main">
+      <!-- Page content -->
+    </main>
+    
+    <!-- ドロワーメニューの利用宣言 -->
+    <script>
+      $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+    </script>
+  </body>
+  
+  </html>
