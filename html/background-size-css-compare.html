@@ -1,0 +1,108 @@
+<!-- 参考サイトhttps://haniwaman.com/flexbox/ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>タイトル</title>
+  <style>
+    .general{
+      width: 70%;
+    }
+    .bg-cover1{
+      background: #d5891c url(../img/backcover-img.jpg);
+      height: 300px;
+      background-size: cover;
+    }
+    .bg-cover2{
+      background: #d5891c url(../img/backcover-img.jpg);
+      height: 300px;
+      background-size: auto;      
+    }
+    .bg-cover3{
+      background: #d5891c url(../img/backcover-img.jpg) no-repeat;
+      height: 300px;
+      background-size: contain;         
+    }
+    .bg-cover4{
+      background: #d5891c url(../img/backcover-img.jpg) no-repeat;
+      height: 300px;
+      background-size: 100%;            
+    }
+    .bg-cover5{
+      background: #d5891c url(../img/backcover-img.jpg) no-repeat;
+      height: 100vh;
+    }
+    .bg-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+      text-shadow: 3px 3px 3px #fff;
+    }
+    .bg-cover6{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .bg-aspect {
+      background:#d5891c url(../img/backcover-img.jpg) no-repeat;
+      padding-top: 65.73%;
+      position: relative;
+    }
+    .bg-cover7{
+      background: #d5891c url(../img/backcover-img.jpg) no-repeat;
+      height: 300px;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+<!--上下中央揃いのNavigation =====================================
+=================================================== -->
+<h2 style="margin-bottom: 5rem; font-size: 3rem;">background-sizeの比較</h2>
+  <div class="compare">
+      <h2>確実に覆われる「cover」</h2>
+      <div class="general bg-cover1"></div>
+  </div>
+  <div class="compare">
+      <h2>大きさが全く変わらない「auto」</h2>
+      <div class="general bg-cover2"></div>
+  </div>
+  <div class="compare">
+      <h2>縦横比は維持されるけど隙間が生まれやすい「contain」</h2>
+      <div class="general bg-cover3"></div>
+  </div>
+  <div class="compare">
+      <h2>縦横比はめちゃくちゃになるけど覆われる「100%」</h2>
+      <div class="general bg-cover4"></div>
+  </div>
+  <div class="compare">
+      <h2>縦横比を維持</h2>
+      <div class="general bg-cover5"></div>
+  </div>
+  <div class="compare">
+      <h2>縦横比を維持した背景の中央に文字</h2>
+      <div class="bg-aspect">
+        <div class="general bg-cover6">
+          <div class="bg-content">中央の文字</div>
+        </div>
+      </div>
+  </div>
+  <div class="compare">
+      <h2>背景を固定</h2>
+      <div class="general bg-cover7"></div>
+  </div>
+  <div style="margin-top: 10rem;" class="dummy-bottom"></div>
+</body>
+</html> 

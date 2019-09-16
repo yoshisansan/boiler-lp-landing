@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>タイトル</title>
+  <style>
+    .cards{
+      display: flex;
+      max-height: 20rem;
+      text-decoration: none;
+      width : -webkit-calc(100% - 20px) ;
+      width : calc(100% - 20px);
+      box-shadow: 0 0 3px 1px rgba(0,0,0,.1);
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+    .cards .cards-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: .4em;
+    }
+    .cards .cards-body{
+      width : -webkit-calc(100% - 20px) ;
+      width : calc(100% - 20px);
+
+    }
+    .cards .cards-body time{
+      display: block;
+      text-align: end;
+      font-size: 1.73rem;
+      padding: 0 .4em;
+    }    
+    .cards .cards-title{
+      font-size: 2.7rem;
+    }
+    .cards .cards-body p{
+      font-size: 1.73rem;
+      padding: .2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="cards">
+  <div class="cards-img">
+      <img src="../img/cat-thumbnail.jpg" alt="neko" width="100">
+  </div>  
+  <div class="cards-body">
+    <time>2019.9.16</time>
+    <div class="cards-title">カードのタイトル</div>
+    <p>カードに関する説明を入力しています。カードに関する説明を入力しています。</p>
+  </div>
+</div>
+</body>
+</html>

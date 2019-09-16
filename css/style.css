@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+
+body{
+  /* 文字が滑らかになるが印象は少し弱めになる特徴があるので注意 */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "M PLUS 1p","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  /* 16pxのフォントは様々なサイズに割り切れて使い勝手が良いのでおまじない的にこのサイズが指定されている */
+  font-size: 1.6rem;
+}
