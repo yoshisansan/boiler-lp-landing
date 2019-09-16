@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>タイトル</title>
+  <style>
+  .iframe-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* = height ÷ width × 100 ~GoogleMapに表示されている高さと幅を参照~*/
+  }
+  .iframe-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }    
+  </style>
+</head>
+<body>
+  <div class="iframe-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.510087947208!2d44.800663914922744!3d41.70951068392745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440ccd352e52b5%3A0xf42bc14f3c7d7a1a!2z44OV44Kh44OW44Oq44KrIOODiOODk-ODquOCtw!5e0!3m2!1sja!2sge!4v1568647980401!5m2!1sja!2sge" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+</body>
+</html>
+
