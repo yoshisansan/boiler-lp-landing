@@ -1,0 +1,60 @@
+html {
+  font-size: 62.5%;
+}
+
+body{
+  /* 文字が滑らかになるが印象は少し弱めになる特徴があるので注意 */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "M PLUS 1p","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  /* 16pxのフォントは様々なサイズに割り切れて使い勝手が良いのでおまじない的にこのサイズが指定されている */
+  font-size: 1.6rem;
+}
+
+
+.menu-container{
+  margin: 0;
+}
+.menu-container .menu{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-container .menu .menu-item{
+  flex:1;
+}
+.menu-container .menu .menu-item a{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-right: none;
+  color: #333;
+  display: block;
+  padding: 0.6em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-container .menu .menu-item a:hover{
+  background-color: #cccccc;
+  color:#fff;
+}
+.menu-container .menu .menu-item:last-child a{
+  border-right: 1px solid #ccc;
+}
+
+@media screen and (max-width:768px) {
+  .menu-container .menu{
+    display: none;
+    width: 100%;
+  }
+  .menu-container .menu .menu-item{
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+  }
+  .menu-container .menu .menu-item:nth-child a{
+    border-bottom: none;
+  }
+}

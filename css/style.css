@@ -12,3 +12,22 @@ body{
   /* 16pxのフォントは様々なサイズに割り切れて使い勝手が良いのでおまじない的にこのサイズが指定されている */
   font-size: 1.6rem;
 }
+
+/* よく使うシリーズ */
+.center-absolute{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+}
+
+@media screen and (min-width:480px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+}
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+}
